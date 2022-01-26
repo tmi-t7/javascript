@@ -5,7 +5,7 @@ if (a != 10) {
     console.log(a);
 }
 
-if (10 <= b < 20 && b % 2 === 0) {
+if (b >=10 && b < 20 && b % 2 === 0) {
     console.log(b);
 }
 
