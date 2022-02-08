@@ -1,25 +1,26 @@
-let numbers = [2,5,12,13,15,18,22];
+let numbers = [2, 5, 12, 13, 15, 18, 22];
 
 function isEven(num) {
-    for(let i = 0; i < numbers.length; i ++){
-    if( num[i] % 2 ===0){
-    console.log(num[i] +"は偶数です");
+    for(let i = 0; i < numbers.length; i ++) {
+        if(num[i] % 2 ===0){
+            console.log(num[i] + "は偶数です");
+        }
     }
 }
-}
+
 isEven(numbers);
 
 
-class car {
-    constructor(content, contents){
-        this.content= content;
-        this.contents= contents;
+class Car {
+    constructor(gass, number){
+        this.gass = gass;
+        this.number = number;
     }
 
-    getNumGas() {
-        console.log(`ガソリンは${this.content}です。ナンバーは${this.contents}です`);
+    getNumGas(){
+        console.log(`ガソリンは${this.gass}です。ナンバーは${this.number}です`);
     }
 }
- let gas = new car("ハイオク","1234");
- gas.getNumGas();
- 
+
+let content = new Car("ハイオク","1234");
+content.getNumGas();
